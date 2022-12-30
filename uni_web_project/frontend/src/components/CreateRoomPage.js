@@ -11,11 +11,11 @@ export default function CreateRoomPage(props) {
     const[votesToSkip,setgvotesToSkip] = useState(defaultVotes);
   
     const handleVotesChange = () => {
-      setgvotesToSkip(target.value);
+      setgvotesToSkip(event.target.value);
     };
   
     const handleGuestCanPauseChange = () => {
-      setguestCanPause(target.value === "true" ? true : false);
+      setguestCanPause(event.target.value === "true" ? true : false);
     };
   
     const handleRoomButtonPressed = () => {
